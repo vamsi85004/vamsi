@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main()
+{
+	printf("Name : vamsi koti reddy");
+	return 0;
+}
