@@ -1,0 +1,32 @@
+#include <stdio.h>
+ 
+void printN(char ch, int n)
+{
+    int i;
+    for (i = 1; i <= n; i++)
+    {
+        printf("%c", ch);
+    }
+}
+ 
+int main(void)
+{
+    int i, n;
+    printf("Enter the number of rows: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        printN(' ', n);
+        printN('*', 1);
+        printf("\n");
+    }
+    printN('*', 2 * n + 1);
+    printf("\n");
+    for (i = 1; i <= n; i++)
+    {
+        printN(' ', n);
+        printN('*', 1);
+        printf("\n");
+    }
+    return 0;
+}
