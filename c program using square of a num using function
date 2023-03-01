@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int rev(int);
+	int r,a;
+
+	clrscr();
+
+	printf("Enter any number: ");
+	scanf("%d",&a);
+
+	r = rev(a);
+
+	printf("Square is: %d",r);
+
+	getch();
+}
+
+int rev(int x)
+{
+	return(x*x);
+}
